@@ -40,13 +40,23 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], select, textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -57,7 +67,6 @@ input[type=text]:focus, input[type=password]:focus {
 /* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
 }
 
 /* Set a style for the submit button */
@@ -84,5 +93,53 @@ a {
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
+  text-align: center;
+}
+.post-text {
+  font-family: monospace;
+}
+.post:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.post-column-left {
+  margin: 0;
+  float: left;
+  width: 95%;
+  padding: 5px;
+}
+.post-column-right {
+  float: left;
+  width: 5%;
+  padding: 0px;
+}
+
+.column-left {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+.column-right {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.column-left, .column-right {
+	    width: 100%;
+	    padding: 0;
+	}
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.votebtn {
+  font-size: x-large;
   text-align: center;
 }

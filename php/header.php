@@ -14,5 +14,8 @@ if (!REDIDNT) die();
 
         <!--- Styles --->
         <link rel="stylesheet" type="text/css" href="/static/css/styles.css" >
+
+        <!--- Scripts --->
+        <script src="/static/js/script.js"></script>
     </head>
     
